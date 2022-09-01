@@ -1,4 +1,5 @@
 <script>
+	import { slide } from 'svelte/transition';
 	let navclicked = false;
 	const navclick = () => {
 		navclicked = !navclicked;
@@ -57,7 +58,7 @@
 	</div>
 </nav>
 {#if navclicked}
-	<nav class="side">
+	<nav class="side" transition:slide>
 		<ul class="show">
 			<li class="nav-item" on:click={navclick}>
 				<a class="nav-link" href="#none"
@@ -175,8 +176,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-
-		background-color: red;
 	}
 	.nav-item {
 		width: 10rem;
