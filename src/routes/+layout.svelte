@@ -7,9 +7,7 @@
 <main><slot /></main>
 
 <style>
-	/* header {
-		opacity: 0.7;
-	} */
+
 	main {
 		padding-top: 4.5rem;
 	}

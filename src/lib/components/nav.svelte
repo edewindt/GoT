@@ -114,10 +114,12 @@
 		display: flex;
 		align-items: center;
 	}
+
 	.link-text {
 		padding-left: 1rem;
 		color: var(--light);
 	}
+
 	ul {
 		display: flex;
 		width: 30rem;
@@ -128,6 +130,7 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+		height: 100%;
 	}
 	nav {
 		width: 100%;
@@ -136,6 +139,7 @@
 		display: flex;
 		align-items: center;
 		position: fixed;
+		z-index: 1;
 	}
 	a {
 		color: var(--light);
@@ -148,13 +152,17 @@
 		padding-left: 1rem;
 		display: flex;
 		align-items: center;
+		transition: 0.7s;
 	}
 	.burger:hover {
 		cursor: pointer;
+		background-color: black;
 	}
 	.dark-mode {
 		width: 3rem;
 		padding-right: 1rem;
+		display: flex;
+		align-items: center;
 	}
 	.large {
 		padding-left: 1rem;
@@ -165,7 +173,7 @@
 	.side {
 		width: 15rem;
 		height: 100vh;
-		background-color: black;
+		background-color: var(--darkp);
 		display: block;
 	}
 	.show {
@@ -178,7 +186,12 @@
 		justify-content: center;
 	}
 	.nav-item {
-		width: 10rem;
+		width: 100%;
+		transition: 0.7s;
+		padding-left: 3rem;
+	}
+	.nav-item:hover {
+		background-color: black;
 	}
 	.nav-link {
 		height: 5rem;
@@ -186,6 +199,16 @@
 	.nav-link svg {
 		margin-right: 1rem;
 		min-width: 1.5rem;
+	}
+	.link-text:hover {
+		color: orange;
+	}
+	a:hover svg {
+		color: orange;
+		fill: orange;
+	}
+	a:hover {
+		color: orange;
 	}
 	@media only screen and (max-width: 550px) {
 		/* nav {

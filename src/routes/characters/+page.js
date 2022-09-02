@@ -6,8 +6,12 @@ const query = gql`
 			fullname
 			title
 			id
+			media {
+				gif
+			}
 			family {
 				house
+				sigil
 			}
 		}
 	}

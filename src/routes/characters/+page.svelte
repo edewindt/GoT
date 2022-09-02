@@ -1,8 +1,51 @@
 <script>
 	export let data;
+	import CharacterCard from '$lib/components/characterCard.svelte';
 	let Data = data.data;
+	console.log(Data);
 </script>
 
-{#each Data.characters as { fullname, title, family }}
-	<p>Name: {fullname}Title:{title} House: {family.house}</p>
-{/each}
+<section>
+	<div class="header">
+		<div class="char">Characters</div>
+		<div class="title-h">Title</div>
+		<div class="house">House</div>
+	</div>
+	<CharacterCard {Data} />
+</section>
+
+<style>
+	.header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		color: var(--light);
+		width: 70rem;
+		font-size: 2.5rem;
+	}
+	.char {
+		display: flex;
+		justify-content: center;
+		font-family: 'Aboreto', cursive;
+		position: relative;
+		right: 9rem;
+	}
+	.title-h {
+		font-family: 'Aboreto', cursive;
+		position: relative;
+		left: 2rem;
+	}
+
+	.house {
+		display: flex;
+		justify-content: center;
+		font-family: 'Aboreto', cursive;
+	}
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: black;
+		height: 100%;
+		padding-top: 3rem;
+	}
+</style>
