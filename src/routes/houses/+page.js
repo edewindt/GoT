@@ -4,6 +4,8 @@ const query = gql`
 	{
 		families {
 			house
+			sigil
+			id
 			characters {
 				fullname
 			}
@@ -12,6 +14,7 @@ const query = gql`
 `;
 export const load = async () => {
 	const data = await request('http://localhost:8000/', query);
+
 	return {
 		data
 	};

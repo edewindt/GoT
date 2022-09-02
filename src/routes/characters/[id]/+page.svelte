@@ -22,3 +22,6 @@
 <p>Quote: {randquote.body}</p>
 <p>From Season {randquote.season} Episode {randquote.episode}</p>
 <button on:click={random}>Quote generator</button>
+
+<style>
+</style>

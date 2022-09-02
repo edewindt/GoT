@@ -3,7 +3,7 @@ import { request, gql } from 'graphql-request';
 const query = gql`
 	{
 		quotes {
-			body
+			id
 			season
 			episode
 			author {
