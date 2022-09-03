@@ -1,5 +1,6 @@
 <script>
 	import { request, gql } from 'graphql-request';
+	import { fade } from 'svelte/transition';
 	let input;
 	let fullname = '';
 	let firstname = '';
@@ -25,7 +26,6 @@
 					id
 					family {
 						house
-						sigil
 					}
 					quotes {
 						body
@@ -75,41 +75,55 @@
 				on:click={fetch}>Search</button
 			>
 		</div>
+
 		{#if click}
-			<div class="pics">
-				<img id="gif" src={gif} alt="" />
-				<div class="details">
-					<h3 class="det-head">{fullname}</h3>
-					<p>Fullname: {fullname}</p>
-					<p>ID: {id}</p>
-					<p>Firstname: {firstname}</p>
-					<p>Lastname: {lastname}</p>
-					<p>Family: {family}</p>
+			<div transition:fade={{ delay: 500 }} class="content">
+				<div class="pics">
+					<img id="gif" src={gif} alt="" />
+					<div class="details">
+						<h3 class="det-head">{fullname}</h3>
+						<p>Fullname: {fullname}</p>
+						<p>ID: {id}</p>
+						<p>Firstname: {firstname}</p>
+						<p>Lastname: {lastname}</p>
+						<p>Family: {family}</p>
+					</div>
+					<img id="image" src={image} alt="" />
 				</div>
-				<img id="image" src={image} alt="" />
-			</div>
-
-			<!-- <img src={sigil} alt="" /> -->
-
-			<div class="quote-wrapper">
-				<div class="quote">
-					<h3>Quote:</h3>
-
-					<div class="body">
-						<p>"{randquote.body}"</p>
-						<p>
-							from Season {randquote.season}, Episode {randquote.episode}<button on:click={random}
-								>New Quote</button
-							>
-						</p>
+				<div class="quote-wrapper">
+					<div class="quote">
+						<h3>Quote:</h3>
+						<div class="body">
+							<p>"{randquote.body}"</p>
+							<p>
+								from Season {randquote.season}, Episode {randquote.episode}<button on:click={random}
+									>New Quote</button
+								>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		{/if}
 	</div>
+	{#if !click}
+		<div in:fade={{ delay: 200, duration: 300 }} class="intro">
+			<h3>Search for the firstname of a Game of Thrones character to begin</h3>
+
+			<p>Menu is in the top left</p>
+		</div>
+	{/if}
 </section>
 
 <style>
+	.intro {
+		position: relative;
+		bottom: 15rem;
+		text-align: center;
+	}
+	.intro p {
+		margin-top: 3rem;
+	}
 	.input {
 		width: 15rem;
 		height: 2rem;
@@ -152,7 +166,7 @@
 		display: grid;
 		justify-content: center;
 		background-color: black;
-		min-height: 100vh;
+		min-height: calc(100vh - 4.5rem);
 	}
 	.container {
 		width: 80rem;
