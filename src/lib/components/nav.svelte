@@ -140,6 +140,7 @@
 		align-items: center;
 		position: fixed;
 		z-index: 1;
+		box-shadow: 0 0 1rem pink;
 	}
 	a {
 		color: var(--light);
@@ -225,7 +226,7 @@
 			display: none;
 		}
 		.burger {
-			width: 3rem;
+			width: 3.7rem;
 		}
 	}
 	@media only screen and (max-width: 500px) {

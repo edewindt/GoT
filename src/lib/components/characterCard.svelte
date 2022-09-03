@@ -1,6 +1,5 @@
 <script>
 	export let Data;
-	console.log('Parent');
 </script>
 
 <h1>Character!</h1>
@@ -27,7 +26,7 @@
 		height: 10rem;
 		width: 100rem;
 		background-color: var(--darkp);
-		margin-top: 1rem;
+		margin-top: 2rem;
 		border-radius: 1.5rem;
 		box-shadow: 0 0 1rem pink;
 	}
