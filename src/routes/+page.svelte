@@ -44,7 +44,7 @@
 			firstname: input
 		};
 		console.log(input);
-		const data = await request('http://localhost:8000/', query, variables);
+		const data = await request(import.meta.env.VITE_API, query, variables);
 		fullname = data.searchChar.fullname;
 		firstname = data.searchChar.firstname;
 		lastname = data.searchChar.lastname;
@@ -68,6 +68,7 @@
 	};
 </script>
 
+<svelte:head><title>GoT - Home</title></svelte:head>
 <section>
 	<div class="container" class:cont={click}>
 		<div class="search">

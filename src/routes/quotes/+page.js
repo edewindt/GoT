@@ -13,7 +13,8 @@ const query = gql`
 	}
 `;
 export const load = async () => {
-	const data = await request('http://localhost:8000/', query);
+	const data = await request(import.meta.env.VITE_API, query);
+	console.log(data);
 	return {
 		data
 	};
