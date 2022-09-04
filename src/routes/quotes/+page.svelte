@@ -28,12 +28,13 @@
 		align-items: center;
 	}
 	.quotecard {
-		width: 100%;
 		display: flex;
 		align-items: center;
+		text-align: center;
 		justify-content: center;
 		height: 10rem;
 		width: 100rem;
+		max-width: 90vw;
 		background-color: var(--darkp);
 		margin-top: 2rem;
 		border-radius: 1.5rem;
@@ -51,5 +52,10 @@
 		font-weight: 700;
 		color: var(--light);
 		font-size: 2.5em;
+	}
+	@media only screen and (max-width: 450px) {
+		p {
+			font-size: 1.5rem;
+		}
 	}
 </style>

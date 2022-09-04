@@ -10,5 +10,6 @@
 <style>
 	main {
 		padding-top: 4.5rem;
+		max-width: 100vw;
 	}
 </style>

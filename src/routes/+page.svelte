@@ -84,7 +84,7 @@
 					<div class="details">
 						<h3 class="det-head">{fullname}</h3>
 						<p>Fullname: {fullname}</p>
-						<p>ID: {id}</p>
+						<p id="id">ID: {id}</p>
 						<p>Firstname: {firstname}</p>
 						<p>Lastname: {lastname}</p>
 						<p>Family: {family}</p>
@@ -118,8 +118,6 @@
 
 <style>
 	.intro {
-		position: relative;
-		bottom: 15rem;
 		text-align: center;
 	}
 	.intro p {
@@ -168,6 +166,8 @@
 		justify-content: center;
 		background-color: black;
 		min-height: calc(100vh - 4.5rem);
+		grid-template-rows: 0.7fr 1fr;
+		max-width: 100vw;
 	}
 	.container {
 		width: 80rem;
@@ -176,6 +176,7 @@
 		margin: 4rem 0;
 		border-radius: 1.5rem;
 		box-shadow: 0 0 1rem pink;
+		max-width: calc(100vw - 2rem);
 	}
 	.cont {
 		width: 100rem;
@@ -196,12 +197,7 @@
 		justify-content: space-around;
 		align-items: center;
 		margin-top: 5rem;
-	}
-	.details {
-		color: var(--light);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		max-width: 100vw;
 	}
 	p {
 		font-size: 1.5rem;
@@ -209,8 +205,17 @@
 		font-weight: 700;
 		color: var(--light);
 	}
+	.details {
+		color: var(--light);
+		display: grid;
+		justify-content: center;
+		text-align: center;
+		margin: 3rem;
+	}
+
 	.quote {
 		width: 45rem;
+		max-width: 100vw;
 	}
 	.quote-wrapper {
 		display: grid;
@@ -231,5 +236,72 @@
 		text-align: center;
 		position: relative;
 		bottom: 4rem;
+	}
+
+	@media only screen and (max-width: 1100px) {
+		.container {
+			margin-left: 1rem;
+			height: 8rem;
+		}
+		button {
+			margin: 0.5rem;
+		}
+		#image {
+			display: none;
+		}
+		.cont {
+			height: fit-content;
+			margin: 0;
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		.input {
+			width: calc(38vw);
+		}
+
+		.pics {
+			display: flex;
+			flex-direction: column;
+			height: 50rem;
+			margin-top: 1rem;
+			grid-template-rows: 1fr 1fr;
+		}
+		.details {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.quote p:last-child {
+			margin-top: 1.5rem;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		img {
+			height: 15rem;
+			width: 15rem;
+		}
+		.input {
+			width: calc(38vw);
+		}
+		.det-head {
+			font-size: 3rem;
+		}
+		.search {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2.5rem;
+		}
+		.container {
+			height: fit-content;
+		}
+		.details {
+			text-align: center;
+			font-size: 1rem;
+		}
+		#id {
+			display: none;
+		}
 	}
 </style>

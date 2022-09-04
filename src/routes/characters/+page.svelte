@@ -2,7 +2,6 @@
 	export let data;
 	import CharacterCard from '$lib/components/characterCard.svelte';
 	let Data = data.data;
-	console.log(Data);
 </script>
 
 <section>
@@ -21,6 +20,7 @@
 		color: var(--light);
 		width: 70rem;
 		font-size: 2.5rem;
+		max-width: 97vw;
 	}
 	.char {
 		display: flex;
@@ -47,5 +47,30 @@
 		background-color: black;
 		height: 100%;
 		padding-top: 3rem;
+	}
+	@media only screen and (max-width: 1400px) {
+		.title-h {
+			position: static;
+		}
+		.char {
+			position: static;
+		}
+	}
+	@media only screen and (max-width: 1000px) {
+		.title-h {
+			display: none;
+		}
+		.header {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.header .char,
+		.house {
+			font-size: 1.5rem;
+		}
+		.header {
+			width: 90vw;
+		}
 	}
 </style>

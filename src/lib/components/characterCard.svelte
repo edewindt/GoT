@@ -2,8 +2,6 @@
 	export let Data;
 </script>
 
-<h1>Character!</h1>
-
 {#each Data.characters as { id, fullname, family, media, title }}
 	<a href={'/characters/' + id}>
 		<div class="items">
@@ -13,7 +11,7 @@
 			<li>{fullname}</li>
 			<li class="title">{title}</li>
 			<li class="img"><img class="circ" src={family.sigil} alt="" /></li>
-			<li>{family.house}</li>
+			<li class="house">{family.house}</li>
 		</div>
 	</a>
 {/each}
@@ -29,6 +27,7 @@
 		margin-top: 2rem;
 		border-radius: 1.5rem;
 		box-shadow: 0 0 1rem pink;
+		max-width: calc(100vw - 2.5rem);
 	}
 	.items:hover {
 		background-color: black;
@@ -64,5 +63,34 @@
 	}
 	.items:hover li {
 		color: orange;
+	}
+	@media only screen and (max-width: 1000px) {
+		.items {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		.title {
+			display: none;
+		}
+	}
+	@media only screen and (max-width: 700px) {
+		li {
+			font-size: 1.5rem;
+		}
+	}
+	@media only screen and (max-width: 575px) {
+		.items {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		li {
+			font-size: 1rem;
+		}
+	}
+	@media only screen and (max-width: 450px) {
+		.house {
+			display: none;
+		}
+		.items {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
 	}
 </style>

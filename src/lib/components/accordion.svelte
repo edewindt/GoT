@@ -10,7 +10,7 @@
 	</button>
 	<div class:open-panel={isOpen} class="panel">
 		Characters in {family.house}:
-		{#each family.characters as character}<p>
+		{#each family.characters as character}<p class="char">
 				{character.fullname}
 			</p>{:else}<p>No house or family members...</p>
 		{/each}
@@ -20,8 +20,6 @@
 
 <style>
 	.accord {
-		width: 100rem;
-		margin: auto;
 		padding-top: 3rem;
 	}
 	.accordion {
@@ -29,7 +27,8 @@
 		color: aliceblue;
 		cursor: pointer;
 		padding: 18px;
-		width: 100%;
+		width: 100rem;
+		max-width: 90vw;
 		height: 10rem;
 		text-align: center;
 		border: none;
@@ -69,6 +68,7 @@
 		background-color: rgb(255, 236, 205);
 		display: block;
 		height: 0;
+		max-width: 90vw;
 		overflow: hidden;
 		transition: 0.4s;
 		border-radius: 1.5rem;
@@ -79,10 +79,22 @@
 		font-size: 2rem;
 		font-family: 'Aboreto', cursive;
 		font-weight: 700;
+		text-align: center;
 	}
 	.open-panel {
 		height: 20rem;
 		border-top-right-radius: 0;
 		border-top-left-radius: 0;
+	}
+	.char {
+		color: red;
+	}
+	@media only screen and (max-width: 450px) {
+		.accordion {
+			font-size: 1.5rem;
+		}
+		.panel {
+			font-size: 1.5rem;
+		}
 	}
 </style>

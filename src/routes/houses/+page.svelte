@@ -25,5 +25,8 @@
 
 	section {
 		background-color: black;
+		display: grid;
+		justify-content: center;
+		flex-direction: column;
 	}
 </style>
