@@ -3,6 +3,7 @@
 	let Data = data.data;
 </script>
 
+<svelte:head><title>GoT - Quotes</title></svelte:head>
 <section>
 	<h2>Quotes</h2>
 	{#each Data.quotes as { author, season, episode, id }}
@@ -17,9 +18,9 @@
 <style>
 	p {
 		font-family: 'Aboreto', cursive;
-		font-weight: 700;
+		font-weight: 500;
 		color: var(--light);
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	section {
 		background-color: black;
@@ -33,7 +34,7 @@
 		text-align: center;
 		justify-content: center;
 		height: 10rem;
-		width: 100rem;
+		width: 75rem;
 		max-width: 90vw;
 		background-color: var(--darkp);
 		margin-top: 2rem;

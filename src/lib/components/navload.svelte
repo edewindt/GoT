@@ -2,11 +2,12 @@
 	import { loading } from '$lib/loading';
 
 	import { blur } from 'svelte/transition';
+	import fire from '$lib/assets/fire.gif';
 </script>
 
 {#if $loading}
 	<div class="loading" transition:blur>
-		<img src="/src/lib/assets/fire.gif" alt="" />
+		<img src={fire} alt="" />
 		<p>Loading...</p>
 	</div>
 {/if}
