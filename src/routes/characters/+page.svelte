@@ -27,7 +27,7 @@
 		justify-content: center;
 		font-family: 'Aboreto', cursive;
 		position: relative;
-		right: 9rem;
+		right: 4rem;
 	}
 	.title-h {
 		font-family: 'Aboreto', cursive;
@@ -52,13 +52,13 @@
 		.title-h {
 			position: static;
 		}
-		.char {
-			position: static;
-		}
 	}
 	@media only screen and (max-width: 1000px) {
 		.title-h {
 			display: none;
+		}
+		.char {
+			position: static;
 		}
 		.header {
 			grid-template-columns: 1fr 1fr;

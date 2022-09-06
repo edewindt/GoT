@@ -22,7 +22,7 @@
 		display: grid;
 		grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 1fr;
 		height: 10rem;
-		width: 100rem;
+		width: 75rem;
 		background-color: var(--darkp);
 		margin-top: 2rem;
 		border-radius: 1.5rem;
@@ -40,9 +40,9 @@
 		align-items: center;
 		text-align: left;
 		font-family: 'Aboreto', cursive;
-		font-weight: 700;
+		font-weight: 500;
 		color: var(--light);
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 
 	.img {
