@@ -27,7 +27,7 @@
 		color: aliceblue;
 		cursor: pointer;
 		padding: 18px;
-		width: 100rem;
+		width: 75rem;
 		max-width: 90vw;
 		height: 10rem;
 		text-align: center;
@@ -39,9 +39,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-family: 'Aboreto', cursive;
-		font-weight: 700;
+		font-weight: 500;
 	}
 	.img {
 		background-color: black;
@@ -70,19 +70,19 @@
 		height: 0;
 		max-width: 90vw;
 		overflow: hidden;
-		transition: 0.4s;
+		transition: 0.3s;
 		border-radius: 1.5rem;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-family: 'Aboreto', cursive;
-		font-weight: 700;
+		font-weight: 500;
 		text-align: center;
 	}
 	.open-panel {
-		height: 20rem;
+		height: 30rem;
 		border-top-right-radius: 0;
 		border-top-left-radius: 0;
 	}

@@ -1,14 +1,13 @@
 <script>
 	import Accordion from '../../lib/components/accordion.svelte';
 	export let data;
-	let Data = data.data;
-	console.log(Data.families);
+	let Data = data.data.families;
 </script>
 
 <section>
 	<h2>Houses</h2>
 
-	{#each Data.families as family}
+	{#each Data as family}
 		<Accordion {family} />
 	{/each}
 </section>

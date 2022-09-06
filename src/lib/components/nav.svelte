@@ -61,16 +61,16 @@
 	<nav class="side" transition:slide>
 		<ul class="show">
 			<li class="nav-item" on:click={navclick}>
-				<a class="nav-link" href="#none"
-					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+				<p class="nav-link close" href="#none">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						><path
 							d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"
 						/></svg
-					> CLOSE MENU</a
-				>
+					> CLOSE MENU
+				</p>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/characters"
+			<li class="nav-item" on:click={navclick}>
+				<a data-sveltekit-prefetch class="nav-link" href="/characters"
 					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						><path
 							d="M20.822 18.096c-3.439-.794-6.641-1.49-5.09-4.418 4.719-8.912 1.251-13.678-3.732-13.678-5.081 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-2.979.688-3.178 2.143-3.178 4.663l.005 1.241h10.483l.704-3h1.615l.704 3h10.483l.005-1.241c.001-2.52-.198-3.975-3.177-4.663zm-8.231 1.904h-1.164l-.91-2h2.994l-.92 2z"
@@ -78,8 +78,8 @@
 					>Characters</a
 				>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/houses"
+			<li class="nav-item" on:click={navclick}>
+				<a data-sveltekit-prefetch class="nav-link" href="/houses"
 					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						><path
 							d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"
@@ -87,8 +87,8 @@
 					>Houses</a
 				>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/quotes"
+			<li class="nav-item" on:click={navclick}>
+				<a data-sveltekit-prefetch class="nav-link" href="/quotes"
 					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						><path
 							d="M0 1v16.981h4v5.019l7-5.019h13v-16.981h-24zm7 10c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5z"
@@ -96,8 +96,8 @@
 					>Quotes</a
 				>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/media"
+			<li class="nav-item" on:click={navclick}>
+				<a data-sveltekit-prefetch class="nav-link" href="/media"
 					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						><path
 							d="M5 5h-3v-1h3v1zm8 5c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm11-4v15h-24v-15h5.93c.669 0 1.293-.334 1.664-.891l1.406-2.109h8l1.406 2.109c.371.557.995.891 1.664.891h3.93zm-19 4c0-.552-.447-1-1-1-.553 0-1 .448-1 1s.447 1 1 1c.553 0 1-.448 1-1zm13 3c0-2.761-2.239-5-5-5s-5 2.239-5 5 2.239 5 5 5 5-2.239 5-5z"
@@ -105,8 +105,8 @@
 					>Media</a
 				>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/feedback"
+			<li class="nav-item" on:click={navclick}>
+				<a data-sveltekit-prefetch class="nav-link" href="/feedback"
 					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						><path
 							d="M0 1v16.981h4v5.019l7-5.019h13v-16.981h-24zm7 10c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5z"
@@ -148,7 +148,7 @@
 		display: flex;
 		align-items: center;
 		position: fixed;
-		z-index: 1;
+		z-index: 2;
 		box-shadow: 0 0 1rem pink;
 	}
 	a {
@@ -219,6 +219,19 @@
 	}
 	a:hover {
 		color: orange;
+	}
+	.close {
+		display: flex;
+		align-items: center;
+		color: var(--light);
+	}
+	.close:hover {
+		color: orange;
+		cursor: pointer;
+	}
+	.close:hover svg {
+		color: orange;
+		fill: orange;
 	}
 	@media only screen and (max-width: 550px) {
 		/* nav {
