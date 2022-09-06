@@ -17,7 +17,9 @@
 
 <section>
 	<div class="character">
-		<img src={Data.media[0].image} alt="" />
+		{#each Data.media as image}
+			<img src={image} alt="" />
+		{/each}
 		<p>Fullname: {Data.fullname}</p>
 		<p>Title: {Data.title}</p>
 		<p>Family: House {Data.family.house}</p>
