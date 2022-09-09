@@ -17,7 +17,7 @@
 
 <section>
 	<div class="character">
-		{#each Data.media as image}
+		{#each Data.media as { image }}
 			<img src={image} alt="" />
 		{/each}
 		<p>Fullname: {Data.fullname}</p>
@@ -38,6 +38,7 @@
 	img {
 		width: 30rem;
 		height: 30rem;
+		object-fit: cover;
 	}
 	.character {
 		width: 80rem;
