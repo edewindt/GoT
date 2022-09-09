@@ -2,7 +2,7 @@
 	export let Data;
 </script>
 
-{#each Data.characters as { id, fullname, family, media, title }}
+{#each Data as { id, fullname, family, media, title }}
 	<a href={'/characters/' + id}>
 		<div class="items">
 			{#each media as { gif }}

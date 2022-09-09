@@ -1,5 +1,8 @@
 <nav class="side">
 	<ul class="show">
+		<li class="nav-item nav-tit">
+			<a class="nav-link tit" href="/api">API Docs</a>
+		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="/api/characters"
 				><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -9,6 +12,7 @@
 				>Characters</a
 			>
 		</li>
+
 		<li class="nav-item">
 			<a class="nav-link" href="/api/families"
 				><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -37,12 +41,12 @@
 			>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/api/feedback"
+			<a class="nav-link" href="/api/schemas"
 				><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 					><path
-						d="M0 1v16.981h4v5.019l7-5.019h13v-16.981h-24zm7 10c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5z"
+						d="M17.545 5l-5.545-4-5.545 4-6.455-4v18l6.455 4 5.545-4 5.545 4 6.455-4v-18l-6.455 4zm-10.545 2.073l4-2.886v13.068l-4 2.885v-13.067zm6-2.886l4 2.886v13.068l-4-2.885v-13.069zm-11 .405l4 2.479v13.294l-4-2.479v-13.294zm20 13.295l-4 2.479v-13.295l4-2.479v13.295z"
 					/></svg
-				>Feedback</a
+				>Schemas</a
 			>
 		</li>
 	</ul>
@@ -77,7 +81,7 @@
 	}
 
 	.side {
-		width: 15rem;
+		width: 12rem;
 		height: 100vh;
 		background-color: var(--darkp);
 		display: block;
@@ -94,13 +98,13 @@
 	.nav-item {
 		width: 100%;
 		transition: 0.7s;
-		padding-left: 3rem;
+		padding-left: 2rem;
 	}
 	.nav-item:hover {
 		background-color: black;
 	}
 	.nav-link {
-		height: 5rem;
+		height: 3rem;
 	}
 	.nav-link svg {
 		margin-right: 1rem;
@@ -114,10 +118,18 @@
 	a:hover {
 		color: orange;
 	}
-
+	.tit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--light);
+	}
+	.nav-tit {
+		padding: 0;
+	}
 	@media only screen and (max-width: 500px) {
-		ul {
+		/* ul {
 			width: 15rem;
-		}
+		} */
 	}
 </style>

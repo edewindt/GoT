@@ -1,7 +1,7 @@
 <script>
 	export let data;
 	import CharacterCard from '$lib/components/characterCard.svelte';
-	let Data = data.data;
+	let Data = data.data.characters;
 </script>
 
 <section>

@@ -1,7 +1,7 @@
 <script>
 	let codes = [
 		`{
-			media {
+			characters {
 				fullname
 				firstname
 				lastname
@@ -35,26 +35,22 @@
 		const variables = {
 			id
 		};
-		const data = await request(http://localhost:8000/, query, variables);`
+		const data = await request(https://the-got-api-production.up.railway.app/, query, variables);`
 	];
 	let code = codes[0];
 </script>
 
-<h3>Requesting Media Information</h3>
-<p>
-	Every character has their own media, images, gifs, artwork, and more media to perhaps be added in
-	future, this API makes it possible to access more than one type of a media, currently there is
-	only one of every media type, but that will like change as the API matures.
-</p>
+<h3>Schemas</h3>
+<p>There are 4 schemas in this API.</p>
 <p>For for information on this API and the schemas you can visit the API directly at:</p>
 <a href="https://the-got-api-production.up.railway.app/"
 	>https://the-got-api-production.up.railway.app/</a
 >
 <p>
-	You can request all media with a single query using the 'medias' query type, or individual media
-	by id using the 'media' query type. You can then request whatever properties you want from the
-	media model. To find out more about the schemas either visit the API directly or visit the Schemas
-	tab in this documentation.
+	You can request all families with a single query using the 'families' query type, or individual
+	families by id using the 'family' query type. You can then request whatever properties you want
+	from the family model. To find out more about the schemas either visit the API directly or visit
+	the Schemas tab in this documentation.
 </p>
 <p>Navigate between code blocks using the tabs provided.</p>
 <div class="code">
