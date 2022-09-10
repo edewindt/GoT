@@ -4,6 +4,9 @@
 	console.log(Data);
 </script>
 
+<svelte:head>
+	<title>Got - Media</title>
+</svelte:head>
 <section>
 	<h2>Media</h2>
 	<div class="links">

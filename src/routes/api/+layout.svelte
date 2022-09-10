@@ -2,10 +2,9 @@
 	import Sideb from '../../lib/components/sideb.svelte';
 </script>
 
-<!-- <svelte:head>
-	<link rel="stylesheet" href="$lib/assets/prism.css" />
-	<script src="$lib/assets/prism.js"></script>
-</svelte:head> -->
+<svelte:head>
+	<title>API Docs</title>
+</svelte:head>
 <div class="lay">
 	<div class="side">
 		<Sideb />

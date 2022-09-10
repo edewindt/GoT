@@ -4,6 +4,9 @@
 	let Data = data.data.characters;
 </script>
 
+<svelte:head>
+	<title>Got - Characters</title>
+</svelte:head>
 <section>
 	<div class="header">
 		<div class="char">Characters</div>

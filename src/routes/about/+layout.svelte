@@ -1,6 +1,9 @@
 <script>
 </script>
 
+<svelte:head>
+	<title>Got - About</title>
+</svelte:head>
 <div class="lay">
 	<main><section><slot /></section></main>
 </div>

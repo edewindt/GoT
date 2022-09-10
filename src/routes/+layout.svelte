@@ -5,7 +5,7 @@
 	import { loading } from '$lib/loading';
 	import Navload from '../lib/components/navload.svelte';
 	import { lightm } from '$lib/darkmode';
-	// $: $loading = !!$navigating;
+	$: $loading = !!$navigating;
 	// $: console.log($loading);
 	let darkp = 'rgb(37, 31, 41)';
 	let light = 'aliceblue';

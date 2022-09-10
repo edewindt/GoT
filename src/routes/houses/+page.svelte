@@ -4,6 +4,9 @@
 	let Data = data.data.families;
 </script>
 
+<svelte:head>
+	<title>Got - Houses</title>
+</svelte:head>
 <section>
 	<h2>Houses</h2>
 
