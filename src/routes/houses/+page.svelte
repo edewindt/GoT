@@ -14,7 +14,7 @@
 
 <style>
 	h2 {
-		color: aliceblue;
+		color: var(--light);
 		text-align: center;
 		font-size: 2.5rem;
 		font-family: 'Aboreto', cursive;
@@ -23,7 +23,7 @@
 	}
 
 	section {
-		background-color: black;
+		background-color: var(--black);
 		display: grid;
 		justify-content: center;
 		flex-direction: column;

@@ -44,7 +44,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: black;
+		background-color: var(--black);
 		height: 100%;
 		padding-top: 3rem;
 	}

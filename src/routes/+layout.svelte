@@ -4,23 +4,31 @@
 	import { navigating } from '$app/stores';
 	import { loading } from '$lib/loading';
 	import Navload from '../lib/components/navload.svelte';
-	$: $loading = !!$navigating;
-	$: console.log($loading);
+	import { lightm } from '$lib/darkmode';
+	// $: $loading = !!$navigating;
+	// $: console.log($loading);
+	let darkp = 'rgb(37, 31, 41)';
+	let light = 'aliceblue';
+	let black = 'black';
+
+	$: if ($lightm === true) {
+		darkp = 'white';
+		light = 'black';
+		black = 'var(--grey)';
+	} else {
+		darkp = 'rgb(37, 31, 41)';
+		light = 'aliceblue';
+		black = 'black';
+	}
 </script>
 
-<header><Nav /></header>
+<header style="--darkp:{darkp}; --light:{light}; --black:{black};"><Nav /></header>
 
 <Navload />
 
-<!-- <button on:click={() => ($loading = true)}>Set Loading</button> -->
-
-<main><slot /></main>
+<main style="--darkp:{darkp}; --light:{light}; --black:{black};"><slot /></main>
 
 <style>
-	button {
-		width: 10rem;
-		height: 10rem;
-	}
 	main {
 		padding-top: 4.5rem;
 		max-width: 100vw;

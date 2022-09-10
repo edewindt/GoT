@@ -23,8 +23,8 @@
 		padding-top: 3rem;
 	}
 	.accordion {
-		background-color: rgb(37, 31, 41);
-		color: aliceblue;
+		background-color: var(--darkp);
+		color: var(--light);
 		cursor: pointer;
 		padding: 18px;
 		width: 75rem;

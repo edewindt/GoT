@@ -16,7 +16,7 @@
 
 <style>
 	section {
-		background-color: black;
+		background-color: var(--black);
 	}
 	.links {
 		display: flex;

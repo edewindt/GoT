@@ -175,7 +175,7 @@
 	section {
 		display: grid;
 		justify-content: center;
-		background-color: black;
+		background-color: var(--black);
 		min-height: calc(100vh - 4.5rem);
 		grid-template-rows: 0.7fr 1fr;
 		max-width: 100vw;

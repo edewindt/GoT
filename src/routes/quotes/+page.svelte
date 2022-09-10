@@ -23,7 +23,7 @@
 		font-size: 1.75rem;
 	}
 	section {
-		background-color: black;
+		background-color: var(--black);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -53,6 +53,7 @@
 		font-weight: 700;
 		color: var(--light);
 		font-size: 2.5em;
+		margin-top: 2rem;
 	}
 	@media only screen and (max-width: 450px) {
 		p {

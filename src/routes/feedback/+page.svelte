@@ -76,7 +76,8 @@
 		height: 10rem;
 	}
 	section {
-		height: 40rem;
+		background-color: var(--black);
+		height: 92.5vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -98,7 +99,7 @@
 		height: 2rem;
 	}
 	form {
-		color: aliceblue;
+		color: var(--light);
 	}
 	button {
 		border: none;

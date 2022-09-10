@@ -4,14 +4,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
-	background-color: black;
-}
+
 :root {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
 		Verdana, sans-serif;
 	--darkp: rgb(37, 31, 41);
 	--light: aliceblue;
+	--black: black;
+	--white: white;
+	--grey: rgb(211, 194, 194);
 }
 li,
 a {
