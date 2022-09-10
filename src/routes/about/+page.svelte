@@ -1,5 +1,5 @@
 <script>
-	import logo from '$lib/assets/logo.webp';
+	import logo1 from '$lib/assets/logo1.webp';
 </script>
 
 <h2>About This Project</h2>
@@ -97,7 +97,7 @@
 	</li>
 	<li>
 		<a href="https://edewindt.com">
-			<img src={logo} alt="logo" />
+			<img src={logo1} alt="logo" />
 		</a>
 	</li>
 </ul>
