@@ -11,10 +11,10 @@
 	<div class:open-panel={isOpen} class="panel">
 		Characters in {family.house}:
 		{#each family.characters as character}<p class="char">
-				{character.fullname}
+				<a href={'/characters/' + character.id}>{character.fullname}</a>
 			</p>{:else}<p>No house or family members...</p>
 		{/each}
-		<a href={'/houses/' + family.id}>Learn more</a>
+		<a id="lm" href={'/houses/' + family.id}>Learn more</a>
 	</div>
 </div>
 
@@ -54,9 +54,10 @@
 	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 	.active,
 	.accordion:hover {
-		background-color: black;
+		background-color: var(--black);
+		filter: contrast(150%);
 		box-shadow: 0 0 1rem yellow;
-		color: orange;
+		color: var(--orange);
 	}
 	.active {
 		border-bottom-left-radius: 0;
@@ -86,9 +87,20 @@
 		border-top-right-radius: 0;
 		border-top-left-radius: 0;
 	}
-	.char {
+
+	a {
+		color: black;
+	}
+	a:hover {
 		color: red;
 	}
+	#lm {
+		color: rgb(21, 135, 135);
+	}
+	#lm:hover {
+		color: rgb(133, 208, 208);
+	}
+
 	@media only screen and (max-width: 450px) {
 		.accordion {
 			font-size: 1.5rem;

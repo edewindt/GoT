@@ -182,7 +182,8 @@
 	}
 	.burger:hover {
 		cursor: pointer;
-		background-color: black;
+		background-color: var(--black);
+		filter: contrast(150%);
 	}
 	.dark-mode {
 		width: 3rem;
@@ -217,7 +218,8 @@
 		padding-left: 3rem;
 	}
 	.nav-item:hover {
-		background-color: black;
+		background-color: var(--black);
+		filter: contrast(150%);
 	}
 	.nav-link {
 		height: 5rem;
@@ -227,14 +229,14 @@
 		min-width: 1.5rem;
 	}
 	.link-text:hover {
-		color: orange;
+		color: var(--orange);
 	}
 	a:hover svg {
-		color: orange;
-		fill: orange;
+		color: var(--orange);
+		fill: var(--orange);
 	}
 	a:hover {
-		color: orange;
+		color: var(--orange);
 	}
 	.close {
 		display: flex;
@@ -242,12 +244,12 @@
 		color: var(--light);
 	}
 	.close:hover {
-		color: orange;
+		color: var(--orange);
 		cursor: pointer;
 	}
 	.close:hover svg {
-		color: orange;
-		fill: orange;
+		color: var(--orange);
+		fill: var(--orange);
 	}
 	@media only screen and (max-width: 550px) {
 		/* nav {

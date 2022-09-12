@@ -40,6 +40,7 @@
 		margin-top: 2rem;
 		border-radius: 1.5rem;
 		box-shadow: 0 0 1rem pink;
+		transition: 0.4s;
 	}
 	.quotecard:hover {
 		background-color: black;

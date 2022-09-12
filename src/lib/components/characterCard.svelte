@@ -28,10 +28,12 @@
 		border-radius: 1.5rem;
 		box-shadow: 0 0 1rem pink;
 		max-width: calc(100vw - 2.5rem);
+		transition: 0.4s;
 	}
 	.items:hover {
-		background-color: black;
+		background-color: var(--black);
 		box-shadow: 0 0 1rem yellow;
+		filter: contrast(150%);
 	}
 
 	li {
@@ -62,7 +64,7 @@
 		width: 20rem;
 	}
 	.items:hover li {
-		color: orange;
+		color: var(--orange);
 	}
 	@media only screen and (max-width: 1000px) {
 		.items {

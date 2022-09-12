@@ -10,23 +10,25 @@
 	let darkp = 'rgb(37, 31, 41)';
 	let light = 'aliceblue';
 	let black = 'black';
-
+	let orange = 'orange';
 	$: if ($lightm === true) {
 		darkp = 'white';
 		light = 'black';
 		black = 'var(--grey)';
+		orange = 'black';
 	} else {
 		darkp = 'rgb(37, 31, 41)';
 		light = 'aliceblue';
 		black = 'black';
+		orange = 'orange';
 	}
 </script>
 
-<header style="--darkp:{darkp}; --light:{light}; --black:{black};"><Nav /></header>
+<header style="--darkp:{darkp}; --light:{light}; --black:{black};--orange:{orange}"><Nav /></header>
 
 <Navload />
 
-<main style="--darkp:{darkp}; --light:{light}; --black:{black};"><slot /></main>
+<main style="--darkp:{darkp}; --light:{light}; --black:{black}; --orange:{orange}"><slot /></main>
 
 <style>
 	main {

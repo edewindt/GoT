@@ -109,6 +109,8 @@
 	code {
 		color: aliceblue;
 		font-size: 1rem;
+		white-space: pre-wrap;
+		overflow-wrap: break-word;
 	}
 	pre {
 		background-color: rgb(31, 30, 35);

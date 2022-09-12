@@ -7,6 +7,7 @@ const query = gql`
 			sigil
 			id
 			characters {
+				id
 				fullname
 			}
 		}
