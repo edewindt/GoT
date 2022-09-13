@@ -6,10 +6,9 @@
 
 <section>
 	<div class="quote">
-		<p>Author: {Data.author.fullname}</p>
-		<p>Body: {Data.body}</p>
+		<p>{Data.author.fullname}</p>
+		<p>"{Data.body}"</p>
 		<p>From Season {Data.season} Episode {Data.episode}</p>
-		<p>ID: {Data.id}</p>
 	</div>
 </section>
 
@@ -35,7 +34,7 @@
 		font-family: 'Aboreto', cursive;
 		font-weight: 500;
 		color: var(--light);
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 	@media only screen and (max-width: 500px) {
 		.quote p {

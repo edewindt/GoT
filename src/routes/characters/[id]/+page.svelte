@@ -26,7 +26,6 @@
 				<p>Fullname: {Data.fullname}</p>
 				<p>Title: {Data.title}</p>
 				<p>Family: House {Data.family.house}</p>
-				<p>ID:{Data.id}</p>
 			</div>
 		</div>
 		<p class="quote">Quote: {randquote.body}</p>
@@ -88,6 +87,6 @@
 		font-family: 'Aboreto', cursive;
 		font-weight: 500;
 		color: var(--light);
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 </style>

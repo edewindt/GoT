@@ -95,7 +95,6 @@
 					<div class="details">
 						<h3 class="det-head">{fullname}</h3>
 						<p>Fullname: {fullname}</p>
-						<p id="id">ID: {id}</p>
 						<p>Firstname: {firstname}</p>
 						<p>Lastname: {lastname}</p>
 						<p>Family: {family}</p>

@@ -43,11 +43,12 @@
 		transition: 0.4s;
 	}
 	.quotecard:hover {
-		background-color: black;
+		background-color: var(--black);
 		box-shadow: 0 0 1rem yellow;
+		filter: contrast(150%);
 	}
 	.quotecard:hover p {
-		color: orange;
+		color: var(--orange);
 	}
 	h2 {
 		font-family: 'Aboreto', cursive;

@@ -10,7 +10,6 @@
 			<img src={Data.sigil} alt="" />
 			<div class="head-data">
 				<p>House: {Data.house}</p>
-				<p id="id">ID: {Data.id}</p>
 				<p>Origin: {Data.origin}</p>
 				<p>Region: {Data.region}</p>
 				<p>Seat: {Data.seat}</p>
