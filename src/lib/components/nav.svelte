@@ -40,7 +40,7 @@
 			</li>
 			<li>
 				<a href="/api"
-					><span class="start">API</span> <span class="large"> Doumentation</span><span
+					><span class="start">API</span> <span class="large"> Documentation</span><span
 						class="small">Docs</span
 					></a
 				>

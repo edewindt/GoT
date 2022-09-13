@@ -21,7 +21,7 @@ export const load = async ({ params }) => {
 	const variables = {
 		id: params.id
 	};
-	const data = await request('http://localhost:8000/', query, variables);
+	const data = await request(import.meta.env.VITE_API, query, variables);
 	return {
 		data
 	};
