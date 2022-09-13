@@ -6,7 +6,7 @@
 
 <section>
 	<div class="quote">
-		<p>{Data.author.fullname}</p>
+		<h3>{Data.author.fullname}</h3>
 		<p>"{Data.body}"</p>
 		<p>From Season {Data.season} Episode {Data.episode}</p>
 	</div>
@@ -31,6 +31,12 @@
 		align-items: center;
 	}
 	p {
+		font-family: 'Cabin', sans-serif;
+		font-weight: 300;
+		color: var(--light);
+		font-size: 1.5rem;
+	}
+	h3 {
 		font-family: 'Aboreto', cursive;
 		font-weight: 500;
 		color: var(--light);

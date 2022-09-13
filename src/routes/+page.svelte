@@ -89,7 +89,7 @@
 		</div>
 
 		{#if click}
-			<div transition:fade={{ delay: 500 }} class="content">
+			<div in:fade={{ delay: 500 }} class="content">
 				<div class="pics">
 					<img id="gif" src={gif} alt="" />
 					<div class="details">
@@ -107,7 +107,7 @@
 						<div class="body">
 							<p>"{randquote.body}"</p>
 							<p>
-								from Season {randquote.season}, Episode {randquote.episode}<button on:click={random}
+								From Season {randquote.season}, Episode {randquote.episode}<button on:click={random}
 									>New Quote</button
 								>
 							</p>
@@ -121,7 +121,7 @@
 		<div in:fade={{ delay: 200, duration: 300 }} class="intro">
 			<h3>Search for the firstname of a Game of Thrones character to begin</h3>
 
-			<p>Menu is in the top left</p>
+			<h3>Menu is in the top left</h3>
 		</div>
 	{/if}
 </section>
@@ -130,7 +130,7 @@
 	.intro {
 		text-align: center;
 	}
-	.intro p {
+	.intro h3:last-child {
 		margin-top: 3rem;
 	}
 	.input {
@@ -211,8 +211,8 @@
 	}
 	p {
 		font-size: 1.5rem;
-		font-family: 'Aboreto', cursive;
-		font-weight: 700;
+		font-family: 'Cabin', sans-serif;
+		font-weight: 300;
 		color: var(--light);
 	}
 	.details {

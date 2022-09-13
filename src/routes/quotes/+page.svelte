@@ -9,7 +9,7 @@
 	{#each Data.quotes as { author, season, episode, id }}
 		<a href={'/quotes/' + id}>
 			<div class="quotecard">
-				<p>Author:{author.fullname} Season:{season} Episode:{episode}</p>
+				<p>{author.fullname} Season:{season} Episode:{episode}</p>
 			</div></a
 		>
 	{/each}
